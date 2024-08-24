@@ -1,0 +1,23 @@
+collector:
+  library:
+    template:
+      name: "{folder}.lib.g.dart"
+    exclude:
+      type:
+        - .emitter.g.dart
+    include:
+      type:
+        - .dart
+      paths:
+        - lib/app:
+            - routes
+            - services
+        - lib/core:
+            - models
+            - services
+            - widgets
+        - lib/modules/landing:
+            - screens
+            - services
+            - widgets
+
